@@ -1,7 +1,7 @@
 *{
-  margin:0;
-  border:0;
-  box-sizing:0;
+  margin:0px;
+  border:0px;
+  box-sizing:0px;
 }
 
 body {
@@ -30,7 +30,7 @@ align-items:center;
 .form{
   display:flex;
   color:black;
-  margin: top 15px;
+  margin-top: 15px;
   flex-direction:column;
 }
 .hidden {

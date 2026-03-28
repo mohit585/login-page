@@ -2,28 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>login page</title>
+  <title>Login & Signup</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <div class="toggle-buttons">
-      <button onclick="showLogin">LOGIN</button>
-      <button onclick="showSignup">SIGN UP</button>
-    </div>
-    <form id="login form" class="form">
-      <h2>login</h2>
 
-        <input type="text" id="signupName" placeholder="Enter Name" required>
-    <input type="email" id="signemail" placeholder="Enter email" required>
-    <input type="password" id="signpassword" placeholder ="Enter password" required> 
-    <button type="submit">sign up</button>
-  <p id="sign up message"></p>
-  </form>
+    <div class="toggle-buttons">
+      <button onclick="showLogin()">Login</button>
+      <button onclick="showSignup()">Sign Up</button>
+    </div>
+
+    <form id="loginForm" class="form">
+      <h2>Login</h2>
+
+      <input type="email" id="loginEmail" placeholder="Enter Email" required>
+
+      <input type="password" id="loginPassword" placeholder="Enter Password" required>
+
+      <button type="submit">Login</button>
+
+      <p id="loginMessage"></p>
+    </form>
+
+    <form id="signupForm" class="form hidden">
+      <h2>Sign Up</h2>
+
+      <input type="text" id="signupName" placeholder="Enter Name" required>
+
+      <input type="email" id="signupEmail" placeholder="Enter Email" required>
+
+      <input type="password" id="signupPassword" placeholder="Enter Password" required>
+
+      <button type="submit">Sign Up</button>
+
+      <p id="signupMessage"></p>
+    </form>
 
   </div>
-   <script src="script.js"></script>
 
+  <script src="script.js"></script>
 </body>
 </html>
